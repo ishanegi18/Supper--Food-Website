@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="css/reservation.css" />
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<!-- font link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<title>S U P P E R - Always Delicious</title>
+</head>
+
+<body>
+<header>
+  <div class="hamb">
+    <div class="logo-mob"> <img src="images/logo.png" alt="Logo" class="set-img logoimg"></div>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a class="active" href="Reservation.html">Reservation</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <section id="banner" class="reservepage">
+	  <div class="overlayo">
+    <nav class="navbar">
+      <ul class="navbarul">
+        <li class="navbarli"><a href="index.html" class="navbar-link">Home</a></li>
+        <li class="navbarli"><a class="navbar-link" href="aboutus.html">About us</a></li>
+        <li class="navbarli"><a class="navbar-link" href="menu.html">Menu</a></li>
+        <li class="navbarli"><a class="navbar-link" href="Gallery.html">Gallery</a></li>
+        <li class="navbarli"><a class="navbar-link active" href="Reservation.html">Reservation</a></li>
+        <li class="navbarli"><a class="navbar-link" href="Contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+	  <div class="header">
+      <div class="logo"> <img src="images/logo.png" alt="Logo" class="set-img logoimg">
+        <h1>Supper</h1>
+        <p>Always Delicious</p>
+      </div>
+      <div class="bottom-right"> You dont need a silver fork to eat a good food </div>
+    </div>
+		  </div>
+  </section>
+</header>
+<main>
+  <section id="box">
+    <div class="container">
+      <div class="boxwrap">
+        <h2 class="first-heading">Call Us</h2>
+        <h3 class="second-heading">RESERVE BY PHONE</h3>
+        <p class="information">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro similique rem
+          perferendis blanditiis
+          officiis consectetur expedita tempore quo? Fuga, consequatur.</p>
+        <div class="boxcon"><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:(123)456-7890">(123)456-7890</a></div>
+      </div>
+      <div class="boxwrap">
+        <h2 class="first-heading">Email Us</h2>
+        <h3 class="second-heading">RESERVE BY EMAIL</h3>
+        <p class="information">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro similique rem
+          perferendis blanditiis
+          officiis consectetur expedita tempore quo? Fuga, consequatur.</p>
+        <div class="boxcon"><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:abcd@gmail.com">abcd@gmail.com</a></div>
+      </div>
+    </div>
+  </section>
+  <section id="reservation">
+    <h2 class="first-heading">Reservation</h2>
+    <h3 class="reservation_heading">BOOK THE TABLE</h3>
+    <div>
+      <div class="form_info">
+        <form action="#">
+          <input type="text" name="name" class="details" placeholder="Your Name">
+          <input type="email" name="email" class="details" placeholder="Your Email">
+          <input type="text" name="number" class="details" placeholder="Mobile Number">
+        </form>
+      </div>
+      <div class="form_info">
+        <form action="#">
+          <input type="datetime" name="date" class="details" placeholder="Date">
+          <input type="datetime" name="time" class="details" placeholder="Time">
+          <input type="text" name="persons" class="details" placeholder="Number of Persons ">
+        </form>
+      </div>
+      <div>
+        <button class="resr" type="submit">Book Now</button>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container">
+    <div class="top_header"> <span><i class="fa fa-map-marker"></i> 25, King Street, Kitchner ON, Canada</span><span><i class="fa fa-phone"></i> (11) 1234 5678</span> <span><i class="fa fa-envelope"></i> info@supper.com</span> </div>
+    <div class="bottom_content">
+      <div class="social"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-instagram"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-telegram"></i></a> </div>
+      <div class="short-links"> <a href="index.html">Home</a> <a href="aboutus.html">About us</a> <a href="menu.html">Menu</a> <a href="Gallery.html">Gallery</a> <a href="Reservation.html">Reservation</a> <a href="Contact.html">Contact Us</a> </div>
+    </div>
+  </div>
+</footer>
+<div class="copyright">Copyright © 2021 Supper - All rights reserved</div>
+<!-- footer -->
+</body>
+<script>
+	function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+	</script>
+</html>
